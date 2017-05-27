@@ -49,7 +49,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
                             reply.Text = "Welcome";
                             if (!string.IsNullOrEmpty(newMember.Name))
                             {
-                                reply.Text += $" {newMember.Name}";
+                                reply.Text += $" {newMember.Name}" + " Salam";
                             }
                             reply.Text += "!";
                             await client.Conversations.ReplyToActivityAsync(reply);
